@@ -1,0 +1,137 @@
+.header {
+	padding: 50px 0px 200px 0px;
+	background: #F9F6F1;
+	height: 100vh;
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+
+	}
+
+	&__list-left {
+		display: flex;
+
+		li {
+			margin: 0px 45px 0px 0px;
+			display: flex;
+
+			&::after {
+				content: '';
+				width: 0;
+				height: 0;
+				border-left: 3px solid transparent;
+				border-right: 3px solid transparent;
+				border-top: 5px solid $color_title;
+				margin: 0px 0px 0px 5px;
+				display: block;
+				align-self: center;
+			}
+		}
+	}
+	
+	&__link {
+		color: $color_title;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+	}
+
+	&__logo {
+		color: $color_title;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		align-self: center;
+
+		&::before {
+			content: url('../img/logo.png');
+			margin: 0px 20px 0px 0px;
+			width: 40px;
+			height: 40px;
+			vertical-align: middle;
+		}
+	}
+
+	&__list-right {
+		display: flex;
+
+		li {
+			margin: 0px 0px 0px 45px;
+		}
+	}
+
+	&__slider {
+		padding: 15vh 0px 0px 0px;
+	}
+	
+	&__slider-item {
+		display: flex;
+		min-height: 380px;
+	}
+
+	&__slider-banner {
+		width: 50%;
+	}
+
+	&__slider-text {
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: 0.02em;
+		color: $color_font;
+	}
+
+	&__slider-sale {
+		font-weight: 700;
+		font-size: 55px;
+		line-height: 67px;
+		letter-spacing: 0.04em;
+		color: $color_font;
+		margin: 35px 0px 55px 0px;
+	}
+
+	&__slider-btn {
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.03em;
+		color: #ffffff;
+		padding: 18px 30px;
+		background-color: #d7b399;
+	}
+
+	&__slider-product {
+		width: 50%;
+		background: url('../img/header__slider/01.png') no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__slider-pricesmall {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: right;
+		letter-spacing: 0.05em;
+		text-decoration-line: line-through;
+		text-transform: uppercase;
+		color: $color_font;
+	}
+
+	&__slider-pricebig {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 51px;
+		text-align: right;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: #d84033;
+		margin: 15px 0px 0px 0px;
+	}
+}

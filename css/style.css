@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+header, footer, nav, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* 
+// ======= Extra Light (Ultra Light) =======
+@font-face {
+	font-family: '';
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Light =======
+@font-face {
+	font-family: '';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Normal =======
+@font-face {
+	font-family: '';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Medium =======
+@font-face {
+	font-family: '';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Semi Bold (Demi Bold) =======
+@font-face {
+	font-family: '';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Bold =======
+@font-face {
+	font-family: '';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Extra Bold (Ultra Bold) =======
+@font-face {
+	font-family: '';
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Black (Heavy) =======
+@font-face {
+	font-family: '';
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  background: #E5E5E5;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 50px 0px 200px 0px;
+  background: #F9F6F1;
+  height: 100vh;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list-left li {
+  margin: 0px 45px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list-left li::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid #212121;
+  margin: 0px 0px 0px 5px;
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+.header__logo {
+  color: #212121;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__logo::before {
+  content: url("../img/logo.png");
+  margin: 0px 20px 0px 0px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.header__list-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list-right li {
+  margin: 0px 0px 0px 45px;
+}
+
+.header__slider {
+  padding: 15vh 0px 0px 0px;
+}
+
+.header__slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 380px;
+}
+
+.header__slider-banner {
+  width: 50%;
+}
+
+.header__slider-text {
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.header__slider-sale {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 67px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin: 35px 0px 55px 0px;
+}
+
+.header__slider-btn {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 18px 30px;
+  background-color: #d7b399;
+}
+
+.header__slider-product {
+  width: 50%;
+  background: url("../img/header__slider/01.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__slider-pricesmall {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header__slider-pricebig {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #d84033;
+  margin: 15px 0px 0px 0px;
+}
