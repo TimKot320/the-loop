@@ -1,23 +1,30 @@
 .header {
-	padding: 50px 0px 200px 0px;
+	// padding: 50px 0px 0px 0px;
 	background: #F9F6F1;
-	height: 100vh;
+	min-height: 100vh;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
 	&__menu {
+		min-height: 20vh;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 50px 0px 0px 0px;
 	}
 
 	&__nav {
-
 	}
 
 	&__list-left {
 		display: flex;
 
 		li {
-			margin: 0px 45px 0px 0px;
+			margin: 0px 35px 0px 0px;
 			display: flex;
 
 			&::after {
@@ -69,12 +76,41 @@
 	}
 
 	&__slider {
-		padding: 15vh 0px 0px 0px;
+		min-width: 0;
+		min-height: 80vh;
+		padding: 50px 0px 0px 0px;
+		// display: flex;
+		// align-items: center;
+
+
+		// Стилизация слайдера
+		& .slick-dots {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		& .slick-dots li {
+			margin: 0px 8px;
+		}
+
+		// Активная точка
+		& .slick-dots li.slick-active button {
+			background-color: #d7b399;
+		}
+
+		// Элемент точки
+		& .slick-dots li button {
+			font-size: 0;
+			width: 40px;
+			height: 7px;
+			background-color: #cecece;
+		}
 	}
 	
 	&__slider-item {
 		display: flex;
-		min-height: 380px;
+		min-height: 370px;
 	}
 
 	&__slider-banner {
